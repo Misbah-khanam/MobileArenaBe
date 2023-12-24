@@ -42,6 +42,6 @@ app.use('/order', orderRoutes)
 
 const DATABASE_URL = process.env.CONNECTION_URL
 
-mongoose.connect(DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(DATABASE_URL)
     .then(() =>  {app.listen(5000, () => {console.log(`server running on port ${5000}`)})})
     .catch((err) => console.log(err.message))

@@ -9,8 +9,8 @@ import userRoutes from './routes/user.js'
 import orderRoutes from './routes/order.js'
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
-    // origin: '',
+    // origin: 'http://localhost:3000',
+    origin: 'https://mobile-arena.onrender.com',
     optionsSuccessStatus: 200, 
 };
 
